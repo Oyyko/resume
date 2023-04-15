@@ -1,0 +1,1 @@
+[Resume.pdf](resume.oyyko.com/resume.pdf)

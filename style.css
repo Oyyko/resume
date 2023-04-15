@@ -1,0 +1,31 @@
+.flex-container {
+    display: flex;
+
+    flex-direction: column;
+
+    /*this centers the text horizontally*/
+    justify-content: center;
+
+    /*this centers the text vertically*/
+    align-items: center;
+
+    height: calc(30vh);
+    /* color: #ff; */
+    font-size: 10rem;
+    font-family:"JetBrains Mono"
+}
+
+.ff {
+    /* display: flex; */
+
+    /*this centers the text horizontally*/
+    text-align: center;
+
+    /*this centers the text vertically*/
+    /* align-items: center; */
+
+    /* height: calc(20vh); */
+    /* color: #ff; */
+    font-size: 2rem;
+    font-family:"JetBrains Mono"
+}
