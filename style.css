@@ -9,7 +9,7 @@
     /*this centers the text vertically*/
     align-items: center;
 
-    height: calc(30vh);
+    height: calc(40vh);
     /* color: #ff; */
     font-size: 10rem;
     font-family:"JetBrains Mono"
@@ -27,5 +27,5 @@
     /* height: calc(20vh); */
     /* color: #ff; */
     font-size: 2rem;
-    font-family:"JetBrains Mono"
+    font-family:"Pacifico"
 }
