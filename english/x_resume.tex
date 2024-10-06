@@ -1,0 +1,266 @@
+%-------------------------
+% Resume in Latex
+% Author : Jesse Miller
+%------------------------
+
+% supports 10, 11, 12pt font sizes
+% letterpaper = 8.5in x 11in
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{fontspec}
+\setmainfont{IBM Plex Sans}
+
+\usepackage[
+    left=0.5in,
+    right=0.5in,
+    top=0.4in,
+    bottom=0.4in,
+]{geometry}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+% \input{glyphtounicode}
+\usepackage{parskip}
+\usepackage{etoolbox}  % for conditional logic
+\usepackage{csquotes}
+
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+% is_long_version = true will render more detailed resume
+\newtoggle{is_long_version} % Define the boolean variable
+\settoggle{is_long_version}{false}
+
+\pagestyle{fancy}
+
+% clear all header and footer fields
+\fancyhf{}
+\fancyfoot{}
+% remove lines between header/footer
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+% don't stretch text to fill the entire line
+\raggedbottom
+\raggedright
+% remove horizontal padding from table cells
+\setlength{\tabcolsep}{0in}
+
+% Section heading formatting
+\titleformat{\section}{
+  \scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule]
+
+%%% Set spacing %%%
+% set vertical spacing between sections
+\titlespacing*{\section}
+{0pt} % left indent
+{3pt} % spacing above
+{3pt} % spacing below
+
+\linespread{1.01}  % line spacing
+\setlength{\parskip}{0pt} % paragraph spacing
+
+% bullet list spacing
+\setlist[itemize]{itemsep=0pt} % vertical spacing between bullets
+\def\vspaceAfterBullets{3.5pt} % vertical spacing after bullet lists
+\def\bulletIndent{20pt} % indent of bullet lists
+
+% set bullet list symbol formatting
+\setlist[itemize,1]{label=$\vcenter{\hbox{\tiny$\bullet$}}$} 
+\setlist[itemize,2]{label=$\vcenter{\hbox{\tiny$\bullet$}}$}
+\setlist[itemize,3]{label=$\vcenter{\hbox{\tiny$\circ$}}$}
+
+%-------------------------
+% Custom commands
+
+\newcommand{\bulletItem}[1]{
+  \item\small{
+    {#1}
+  }
+}
+
+% company name -- location
+\newcommand{\companyNameAndLocationHeading}[2]{
+  \item 
+    \begin{tabular*}{1.0\textwidth}[b]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2
+    \end{tabular*}
+}
+
+% job title -- date
+\newcommand{\titleAndDateHeading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}[b]{l@{\extracolsep{\fill}}r}
+      {\bfseries\itshape\small #1} & \itshape\small #2
+    \end{tabular*}
+}
+
+% project name -- date
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}[b]{l@{\extracolsep{\fill}}r}
+      \small#1 & #2
+    \end{tabular*}
+}
+
+\newcommand{\sectionListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\sectionListEnd}{\end{itemize}}
+
+\newcommand{\outerBulletListStart}{\begin{itemize}[leftmargin=\bulletIndent]}
+\newcommand{\outerBulletListEnd}{\end{itemize}\vspace{\vspaceAfterBullets}}
+
+
+\newcommand{\innerBulletListStart}{\begin{itemize}[leftmargin=\bulletIndent]}
+\newcommand{\innerBulletListEnd}{\end{itemize}}
+
+% blue colored hyperlinks
+\newcommand{\bref}[2]{\href{#1}{\color{blue}{#2}}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%
+
+\begin{document}
+
+
+%---------- HEADING ----------
+\def\spaceAfterLogo{0.5pt}
+\begin{center}
+  \textbf{\Huge Jerry Zhang} \\ \vspace{3pt}
+  \small
+  \faMobile \hspace{\spaceAfterLogo} \href{tel:1111111111}{(111)-111-1111}
+  $|$
+  \faEnvelope \hspace{\spaceAfterLogo} \href{mailto:111@gmail.com}{111@gmail.com}
+  $|$
+  \faLinkedinSquare \hspace{\spaceAfterLogo} \href{https://www.linkedin.com/in/111}{linkedin.com/in/111}
+  $|$
+  \faGithub \hspace{\spaceAfterLogo} \href{https://github.com/111}{github.com/111}
+  $|$
+  \faGlobe \hspace{\spaceAfterLogo} \href{https://111.com}{111.com}
+  % $|$
+  % \faMapMarker \hspace{\spaceAfterLogo} \href{https://maps.app.goo.gl/hpB8QGkNWpEHrJGD9}{Cambridge, MA}
+\end{center}
+
+%----------- SUMMARY -----------
+\iftoggle{is_long_version}
+{
+  \section{Personal Statement}
+  \small Seasoned Robotics Control Engineer specializing in autonomous vehicles. Expert in control theory, trajectory optimization, and reinforcement learning. Passionate continuous learner, working on numerous side projects and taking online courses.
+}{}
+
+\def\Cpp{C\texttt{++}}
+
+%----------- EDUCATION -----------
+\section{Education}
+\sectionListStart
+
+\companyNameAndLocationHeading
+{University of California, San Diego}{San Diego, California}
+\titleAndDateHeading
+{Master of Science in Computer Science}{\textit{September 2023 \textbf{--} March 2025}}
+\vspace{-10pt}
+\companyNameAndLocationHeading
+{University of Science and Technology of China}{Hefei, Anhui, China}
+\titleAndDateHeading
+{Bachelor of Science in Computer Science}{\textit{September 2019 \textbf{--} June 2023}}
+
+\sectionListEnd
+
+\vspace{-10pt} 
+
+%----------- EXPERIENCE -----------
+\section{Work Experience}
+\sectionListStart
+
+\companyNameAndLocationHeading
+{Tiktok}{San Jose, CA}
+\titleAndDateHeading
+{\Cpp\ Performance Optimization Intern}{June 2024 \textbf{--} September 2024}
+\outerBulletListStart
+\bulletItem{Designed and implemented a \textbf{Protobuf} decoder based on \textbf{Profile-guided optimization}, including collecting runtime data and using it for bottlenecks, reducing branch miss rate by 50\% and improving deserialization speed by 20\%.} 
+\bulletItem{Integrated the new decoder into core internal Tiktok projects, performing exceptionally in large-scale production environments, saving tens of thousands of CPU core, and speeding up these core services by 5\%.} 
+\bulletItem{Added 30 test cases and 10 performance scenarios using Google Test and Benchmark, covering key functionalities, edge cases, and deserialization bottlenecks. Developed an automated pipeline to analyze performance metrics.}
+
+
+\outerBulletListEnd
+
+\companyNameAndLocationHeading
+{Startup}{San Francisco, CA (Remote)}
+\titleAndDateHeading
+{Backend Development Intern}{December 2022 \textbf{--} March 2023}
+\outerBulletListStart
+
+\bulletItem{Integrated AWS account data into backend database using \textbf{Go}, implementing regular synchronizations and transforming data according to business logic and enhancing data accuracy, which is the core business of the company.}
+\bulletItem{Developed an automated AWS report parsing tool to extract and import report information into the company's internal database, enabling the generation of internal reports for users, meeting the needs of many clients.}
+\bulletItem{Engineered a comprehensive usage tracking and billing system that supports complex billing scenarios across multiple cloud platforms, increasing billing accuracy by 25\% and ensuring consistent revenue collection.}
+\outerBulletListEnd
+
+\companyNameAndLocationHeading
+{Tiktok}{Shenzhen, China}
+\titleAndDateHeading
+{\Cpp\ Software Development Intern}{June 2022 \textbf{--} September 2022}
+\outerBulletListStart
+\bulletItem{Engineered a cross-platform screenshot tool for Lark with annotation support and multi-monitor compatibility.}
+% \bulletItem{Separated the screenshot process from Lark's main process, improving system responsiveness by 25\%.}
+\bulletItem{Separated the screenshot process from the main Lark process with \textbf{\Cpp} and \textbf{Chromium}'s Mojo IPC, preventing critical crashes, reducing lag experience, and improving system responsiveness by 25\%.}
+% \bulletItem{Acted as an on-call engineer, fixing over 10 complex bugs related to screenshot and screen recording, ensuring product stability and delivering a high-quality user experience.}
+\bulletItem{Acted as oncall support, resolving over 10 critical bugs related to Lark's screenshot functionalities, addressing \textbf{cross-platform} compatibility and operating system API issues, enhancing system stability and user satisfaction.}
+\bulletItem{Built an automated testing framework, facilitating interaction between JavaScript and \Cpp\ code, simplifying test development complexity, which allowed the testing team to develop and execute test cases 75\% faster.}
+\outerBulletListEnd
+
+\sectionListEnd
+
+
+%----------- SELECT PATENTS -----------
+
+\section{Selected Development Experience}
+\sectionListStart
+\companyNameAndLocationHeading
+{GNU TeXmacs $|$ \emph{\bref{https://github.com/XmacsLabs/mogan}{GitHub \faGithub}}}{Remote}
+\titleAndDateHeading
+{Open Source Contributor}{June 2023 \textbf{--} May 2024}
+\outerBulletListStart
+\bulletItem{Enhanced drawing functionalities using \textbf{\Cpp}, \textbf{Scheme}, and \textbf{Qt}. Fixed over 30 bugs and introduced more than 15 new features, significantly improving software functionality and user experience. Most of these contributions have been integrated into the main GNU TeXmacs project, benefiting tens of thousands of active users.}
+\bulletItem{Developed the Mogan Draw graphics tool, releasing Linux and \textbf{WebAssembly (wasm)} versions. Managed all aspects of UI and feature development, ensuring high usability and performance, benefiting hundreds of users.}
+\outerBulletListEnd
+\companyNameAndLocationHeading
+{Operating System Kernel Development}{Hefei, Anhui, China}
+\titleAndDateHeading
+{Team Leader}{January 2022 \textbf{--} September 2022}
+\outerBulletListStart
+\bulletItem{Led a team of 3 members to develop a Linux-like operating system kernel from scratch using Rust. Implemented over 50 system calls, including process management, memory management, and file system management. The project won third place in a national competition.}
+\outerBulletListEnd
+\sectionListEnd
+
+%----------- SKILLS -----------
+
+\section{Technical Skills}
+\sectionListStart
+\bulletItem{\textbf{Programming Languages:}{ Modern \Cpp (14, 17, 20), C, Python, Rust, Go, Java, JavaScript, HTML5\&CSS3, SQL}}
+\vspace{\vspaceAfterBullets}
+\bulletItem{\textbf{Tools:}{ Linux, Git, CMake, Bazel, PostgreSQL, Docker, Kubernetes, Kafka, Redis, CI/CD, GraphQL, NixOS}}
+\vspace{\vspaceAfterBullets}
+\bulletItem{\textbf{Web:}{ Node.js, Vue, React, Django, Flask, MicroServices, Spring Boot, Ruby on Rails, MongoDB }}
+\vspace{\vspaceAfterBullets}
+\bulletItem{\textbf{Expertise:}{ Linux Kernel, Computer Architecture, Assembly, Compiler, Operating Systems, Data Structures }}
+\vspace{\vspaceAfterBullets}
+\sectionListEnd
+
+%----------- PROJECTS -----------
+
+%-------------------------------------------
+\end{document}

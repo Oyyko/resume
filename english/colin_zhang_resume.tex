@@ -8,13 +8,8 @@
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{fontspec}
-\usepackage[slantfont, boldfont]{xeCJK}
 \setmainfont{IBM Plex Sans}
-% \setCJKmainfont{LXGWWenKai-Regular}[Path=/Users/jia/Library/Fonts/HomeManager/truetype/]
-\setCJKmainfont{msyh}[Path=/Users/jia/Library/Fonts/HomeManager/truetype/]
 
-% \usepackage{CJKutf8}
-% set margins
 \usepackage[
     left=0.5in,
     right=0.5in,
@@ -39,6 +34,9 @@
 \usepackage{etoolbox}  % for conditional logic
 \usepackage{csquotes}
 
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
 
 % is_long_version = true will render more detailed resume
 \newtoggle{is_long_version} % Define the boolean variable
@@ -65,9 +63,6 @@
 \titleformat{\section}{
   \scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-% \pdfgentounicode=1
 
 %%% Set spacing %%%
 % set vertical spacing between sections
@@ -96,7 +91,6 @@
   \item\small{
     {#1}
   }
-  \vspace{2pt}
 }
 
 % company name -- location
@@ -146,9 +140,9 @@
 %---------- HEADING ----------
 \def\spaceAfterLogo{0.5pt}
 \begin{center}
-  \textbf{\Huge 张佳} \\ \vspace{3pt}
+  \textbf{\Huge Colin Zhang} \\ \vspace{3pt}
   \small
-  \faMobile \hspace{\spaceAfterLogo} \href{tel:18792423265}{187-9242-3265}
+  \faMobile \hspace{\spaceAfterLogo} \href{tel:8587893518}{(858)789-3518}
   $|$
   \faEnvelope \hspace{\spaceAfterLogo} \href{mailto:hello@oyyko.com}{hello@oyyko.com}
   $|$
@@ -168,101 +162,105 @@
   \small Seasoned Robotics Control Engineer specializing in autonomous vehicles. Expert in control theory, trajectory optimization, and reinforcement learning. Passionate continuous learner, working on numerous side projects and taking online courses.
 }{}
 
-
+\def\Cpp{C\texttt{++}}
 
 %----------- EDUCATION -----------
-\section{教育经历}
+\section{Education}
 \sectionListStart
 
 \companyNameAndLocationHeading
-{加州大学圣地亚哥分校}{美国加州圣地亚哥}
+{University of California, San Diego}{San Diego, California}
 \titleAndDateHeading
-{计算机科学硕士}{\textit{2023年9月 \textbf{--} 2025年3月}}
-\vspace{-10pt} 
+{Master of Science in Computer Science}{\textit{September 2023 \textbf{--} March 2025}}
+\vspace{-10pt}
 \companyNameAndLocationHeading
-{中国科学技术大学少年班学院}{安徽省合肥市}
+{University of Science and Technology of China}{Hefei, Anhui, China}
 \titleAndDateHeading
-{计算机科学学士}{\textit{2019年9月 \textbf{--} 2023年6月}}
+{Bachelor of Science in Computer Science}{\textit{September 2019 \textbf{--} June 2023}}
 
 \sectionListEnd
 
-\vspace{-10pt}
+\vspace{-10pt} 
 
 %----------- EXPERIENCE -----------
-\def\Cpp{C\texttt{++}}
-\section{工作经历}
+\section{Work Experience}
 \sectionListStart
 
 \companyNameAndLocationHeading
-{字节跳动}{美国加州圣何塞}
+{Tiktok}{San Jose, CA}
 \titleAndDateHeading
-{\Cpp 性能优化实习生}{2024年6月 \textbf{--} 2024年9月}
+{\Cpp\ Performance Optimization Intern}{June 2024 \textbf{--} September 2024}
 \outerBulletListStart
-\bulletItem{设计并实现新的基于Profile-guided optimization的Protobuf 反序列化算法,通过收集运行时数据来优化性能瓶颈,将分支预测失败率降低了50\%,并提升了20\%解析速度。将新版本的protobuf集成至公司内部核心项目中,在大规模生产环境下表现出色,为公司节省了数万个CPU核心,并将核心服务的速度提升了5\%。}
-\bulletItem{使用Google Test和Benchmark编写了30个测试用例和10个性能场景,覆盖了关键功能、边缘情况和关键性能瓶颈。}
+\bulletItem{Designed and implemented a \textbf{Protobuf} decoder based on \textbf{Profile-guided optimization}, including collecting runtime data and using it for bottlenecks, reducing branch miss rate by 50\% and improving deserialization speed by 20\%.} 
+\bulletItem{Integrated the new decoder into core internal Tiktok projects, performing exceptionally in large-scale production environments, saving tens of thousands of CPU core, and speeding up these core services by 5\%.} 
+\bulletItem{Added 30 test cases and 10 performance scenarios using Google Test and Benchmark, covering key functionalities, edge cases, and deserialization bottlenecks. Developed an automated pipeline to analyze performance metrics.}
+
+
 \outerBulletListEnd
 
 \companyNameAndLocationHeading
-{Suger.io (初创公司,获YC投资)}{美国加州旧金山(远程)}
+{Suger.io (YC-backed SaaS startup)}{San Francisco, CA (Remote)}
 \titleAndDateHeading
-{Go语言后端开发实习生}{2022年12月 \textbf{--} 2023年3月}
+{Backend Development Intern}{December 2022 \textbf{--} March 2023}
 \outerBulletListStart
-\bulletItem{将AWS账户数据集成到后端数据库,实现定期同步并根据业务逻辑转换数据,提升了数据准确性,属于公司核心业务。}
-\bulletItem{开发自动化AWS报告解析器,提取并导入报告信息到公司内部数据库用来生成内部用户报告,满足了众多客户的需求。}
-\bulletItem{构建了支持多云平台复杂计费场景的全面使用追踪和计费系统,提升了25\%的计费准确率, 提高了客户满意度。}
+
+\bulletItem{Integrated AWS account data into backend database using \textbf{Go}, implementing regular synchronizations and transforming data according to business logic and enhancing data accuracy, which is the core business of the company.}
+\bulletItem{Developed an automated AWS report parsing tool to extract and import report information into the company's internal database, enabling the generation of internal reports for users, meeting the needs of many clients.}
+\bulletItem{Engineered a comprehensive usage tracking and billing system that supports complex billing scenarios across multiple cloud platforms, increasing billing accuracy by 25\% and ensuring consistent revenue collection.}
 \outerBulletListEnd
 
 \companyNameAndLocationHeading
-{字节跳动}{广东省深圳市}
+{Tiktok}{Shenzhen, China}
 \titleAndDateHeading
-{\Cpp 软件开发实习生}{2022年6月 \textbf{--} 2022年9月}
+{\Cpp\ Software Development Intern}{June 2022 \textbf{--} September 2022}
 \outerBulletListStart
-\bulletItem{实现多平台下的飞书的截图工具,支持截图、标注和多显示器等多种功能,优化了用户交互体验。}
-\bulletItem{将截图功能从飞书的主进程中分离为单独的进程,提升了系统的响应速度和安全性,减少了主进程的资源占用。}
-\bulletItem{作为Oncall工程师,解决了10多个与跨平台兼容性和操作系统API相关的关键问题,提升了系统稳定性和用户满意度。}
-\bulletItem{构建了一个自动化测试框架,使用JavaScript与C++代码进行交互调用,大大简化了测试开发的复杂性,使测试同事能够更加高效地开发和执行测试用例,提升了团队整体的开发效率和生产力。}
+\bulletItem{Engineered a cross-platform screenshot tool for Lark with annotation support and multi-monitor compatibility.}
+% \bulletItem{Separated the screenshot process from Lark's main process, improving system responsiveness by 25\%.}
+\bulletItem{Separated the screenshot process from the main Lark process with \textbf{\Cpp} and \textbf{Chromium}'s Mojo IPC, preventing critical crashes, reducing lag experience, and improving system responsiveness by 25\%.}
+% \bulletItem{Acted as an on-call engineer, fixing over 10 complex bugs related to screenshot and screen recording, ensuring product stability and delivering a high-quality user experience.}
+\bulletItem{Acted as oncall support, resolving over 10 critical bugs related to Lark's screenshot functionalities, addressing \textbf{cross-platform} compatibility and operating system API issues, enhancing system stability and user satisfaction.}
+\bulletItem{Built an automated testing framework, facilitating interaction between JavaScript and \Cpp\ code, simplifying test development complexity, which allowed the testing team to develop and execute test cases 75\% faster.}
 \outerBulletListEnd
 
 \sectionListEnd
 
 
 %----------- SELECT PATENTS -----------
-\vspace{-5pt} 
-\section{开发经历}
+
+\section{Selected Development Experience}
 \sectionListStart
 \companyNameAndLocationHeading
-{Mogan (GNU TeXmacs) $|$ \emph{\bref{https://github.com/XmacsLabs/mogan}{GitHub \faGithub}}}{远程}
+{Mogan (GNU TeXmacs) $|$ \emph{\bref{https://github.com/XmacsLabs/mogan}{GitHub \faGithub}}}{Remote}
 \titleAndDateHeading
-{开源软件贡献者}{2023年6月 \textbf{--} 2024年5月}
+{Open Source Contributor}{June 2023 \textbf{--} May 2024}
 \outerBulletListStart
-\bulletItem{使用\textbf{\Cpp}、\textbf{Scheme}和\textbf{Qt}进行绘图功能的增强。修复了超过30个bug,并引入了15个以上的新功能,显著提升了软件的功能性和用户体验。这些贡献大部分已被集成至GNU TeXmacs主项目,惠及数万名活跃用户。}
-\bulletItem{开发了Mogan Draw图形工具,完成了UI设计和功能开发,发布了Linux和\textbf{WebAssembly(wasm)}版本。}
+\bulletItem{Enhanced drawing functionalities using \textbf{\Cpp}, \textbf{Scheme}, and \textbf{Qt}. Fixed over 30 bugs and introduced more than 15 new features, significantly improving software functionality and user experience. Most of these contributions have been integrated into the main GNU TeXmacs project, benefiting tens of thousands of active users.}
+\bulletItem{Developed the Mogan Draw graphics tool, releasing Linux and \textbf{WebAssembly (wasm)} versions. Managed all aspects of UI and feature development, ensuring high usability and performance, benefiting hundreds of users.}
 \outerBulletListEnd
 \companyNameAndLocationHeading
-{操作系统内核开发}{安徽省合肥市}
+{Operating System Kernel Development}{Hefei, Anhui, China}
 \titleAndDateHeading
-{小队队长}{2022年1月 \textbf{--} 2022年9月}
+{Team Leader}{January 2022 \textbf{--} September 2022}
 \outerBulletListStart
-\bulletItem{领导了一个由3名成员组成的团队,使用Rust从零开始开发了一个类Linux的操作系统内核。实现了包括进程管理、内存管理和文件系统管理在内的50多个系统调用。该项目获得了全国比赛三等奖。}
+\bulletItem{Led a team of 3 members to develop a Linux-like operating system kernel from scratch using Rust. Implemented over 50 system calls, including process management, memory management, and file system management. The project won third place in a national competition.}
 \outerBulletListEnd
 \sectionListEnd
 
 %----------- SKILLS -----------
 
-\section{专业技能}
+\section{Technical Skills}
 \sectionListStart
-\bulletItem{\textbf{编程语言:}{ 熟悉: 现代C++ (14, 17, 20), C, Python, Rust, Go, SQL; 掌握: Java,JavaScript,HTML5\&CSS3, Ruby, Haskell}}
+\bulletItem{\textbf{Programming Languages:}{ Modern C++ (14, 17, 20), C, Python, Rust, Go, Java, JavaScript, HTML5\&CSS3, SQL}}
 \vspace{\vspaceAfterBullets}
-\bulletItem{\textbf{工具:}{ Linux, Git, CMake, Bazel, PostgreSQL, Docker, Kubernetes, Kafka, Redis, CI/CD, GraphQL, NixOS}}
+\bulletItem{\textbf{Tools:}{ Linux, Git, CMake, Bazel, PostgreSQL, Docker, Kubernetes, Kafka, Redis, CI/CD, GraphQL, NixOS}}
 \vspace{\vspaceAfterBullets}
-\bulletItem{\textbf{Web开发:} Node.js, Vue, React, Django, Flask, MicroServices, Spring Boot, Ruby on Rails, MongoDB}
+\bulletItem{\textbf{Web:}{ Node.js, Vue, React, Django, Flask, MicroServices, Spring Boot, Ruby on Rails, MongoDB }}
 \vspace{\vspaceAfterBullets}
-\bulletItem{\textbf{专业领域:} C++软件开发, C++性能优化, Linux内核, 计算机体系结构, 编译器, 操作系统, 汇编}
+\bulletItem{\textbf{Expertise:}{ Linux Kernel, Computer Architecture, Assembly, Compiler, Operating Systems, Data Structures }}
 \vspace{\vspaceAfterBullets}
 \sectionListEnd
 
-
-
+%----------- PROJECTS -----------
 
 %-------------------------------------------
 \end{document}

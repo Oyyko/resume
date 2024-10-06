@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1726818762.84458 "jia_zhang_chinese_resume.xdv" "jia_zhang_chinese_resume.pdf" "jia_zhang_chinese_resume" 1726818763.01318 0
-  "jia_zhang_chinese_resume.xdv" 1726818762.80384 31728 dd4a1672c3041aa4b56b0254ab2879df "xelatex"
+["xdvipdfmx"] 1728104370.01112 "colin_zhang_resume.xdv" "colin_zhang_resume.pdf" "colin_zhang_resume" 1728104370.13506 0
+  "colin_zhang_resume.xdv" 1728104369.95736 47964 64cf2ad86d034e461530e1b91e00791a "xelatex"
   (generated)
-  "jia_zhang_chinese_resume.pdf"
+  "colin_zhang_resume.pdf"
   (rewritten before read)
-["xelatex"] 1726818762.17364 "/Users/jia/github/resume/chinese/jia_zhang_chinese_resume.tex" "jia_zhang_chinese_resume.xdv" "jia_zhang_chinese_resume" 1726818763.01185 0
-  "/Users/jia/github/resume/chinese/jia_zhang_chinese_resume.tex" 1726818762.01361 9759 df1452a908f174a85d9d6f33e2dc1a1d ""
+["xelatex"] 1728104368.71829 "/Users/jia/github/resume/english/colin_zhang_resume.tex" "colin_zhang_resume.xdv" "colin_zhang_resume" 1728104370.13404 0
+  "/Users/jia/github/resume/english/colin_zhang_resume.tex" 1728104368.25107 10553 2abf91e8fdf5f5a91cf8eee62d1c49a1 ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/fonts/tfm/public/cm/cmmi10.tfm" 1 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -53,11 +53,9 @@
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/base/size11.clo" 1 8464 59874a3b0776c73e2a138b025d8473dd ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/base/ts1cmr.fd" 1 2430 fce77d7e103eb98b6c4d486ae1d466c0 ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/base/ulasy.fd" 1 2233 223b021f06a068bcbf05919274832728 ""
-  "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/cjk/texinput/CJKfntef.sty" 1 12851 25a9b5cc006609feb5c9a20ce24a5392 ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/csquotes/csquotes.cfg" 1 7068 06f8d141725d114847527a66439066b6 ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/csquotes/csquotes.def" 1 21994 2bc2a882df92d97dbce35c06bb1d3541 ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/csquotes/csquotes.sty" 1 62761 3c92d495a9e03d7254b9a3266aa17164 ""
-  "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/ctex/ctexhook.sty" 1 6505 33157acfddefdd8fd513e2308e07a435 ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/enumitem/enumitem.sty" 1 51697 f8f08183cd2080d9d18a41432d651dfb ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/etoolbox/etoolbox.sty" 1 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/fancyhdr/fancyhdr.sty" 1 18450 88279bf67c81e69f8e3f1c1bad1a26c5 ""
@@ -86,8 +84,6 @@
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/l3backend/l3backend-xetex.def" 1 31815 59e639f95c4a3bc971cad46c02998fac ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/l3kernel/expl3.sty" 1 6565 10e89ed128ccd59431746bbdd82129fc ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/l3packages/xparse/xparse.sty" 1 9327 11bedad2ac38f92e405a38ed18489a03 ""
-  "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/l3packages/xtemplate/xtemplate-2023-10-10.sty" 1 49753 715423f8c411773dc3698602d0fb87ba ""
-  "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/l3packages/xtemplate/xtemplate.sty" 1 1180 6fa680297853e95f173b451108f02041 ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/marvosym/marvosym.sty" 1 9393 ceaf2ea8eb2c81fdb168323fc5fffc89 ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/parskip/parskip.sty" 1 4288 94714aa7f535440f33181fec52a31963 ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/refcount/refcount.sty" 1 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
@@ -97,17 +93,14 @@
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/tools/tabularx.sty" 1 7147 d45559f8a31b8c53ada0640516660003 ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/tools/verbatim.sty" 1 7500 db31c3d04f8bc9010e47a5efbbace9ff ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/url/url.sty" 1 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/xelatex/xecjk/xeCJK.cfg" 1 408 7369c27beaa819c5f46de3795b22ee3e ""
-  "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/xelatex/xecjk/xeCJK.sty" 1 183137 ed372550124703b2b73cbcc0b47cb20f ""
-  "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/xelatex/xecjk/xeCJKfntef.sty" 1 39577 b470f8a1dbecc9c45c9bf05ca7db9188 ""
   "/nix/store/x0klna6q9dsp0bqa86hhxn7dx93w3z1i-texlive-combined-2023/share/texmf-var/web2c/texmf.cnf" 1 42803 b13b377e1f351a49ac8343878b4a2476 ""
   "/nix/store/x0klna6q9dsp0bqa86hhxn7dx93w3z1i-texlive-combined-2023/share/texmf-var/web2c/xetex/xelatex.fmt" 1 10586589 7523e05ea5fc02449520dfac3ca70fab ""
-  "jia_zhang_chinese_resume.aux" 1726818762.80314 644 5db08a93b5e008128baf20a927a2fd69 "xelatex"
-  "jia_zhang_chinese_resume.out" 1726818762.80364 300 0e16f49feccede8c65168db3e90e51db "xelatex"
-  "jia_zhang_chinese_resume.tex" 1726818762.01361 9759 df1452a908f174a85d9d6f33e2dc1a1d ""
+  "colin_zhang_resume.aux" 1728104369.95668 667 3887667cfc85b9f6a73a0d7818fa783c "xelatex"
+  "colin_zhang_resume.out" 1728104369.95715 539 2417b47431cee2283de9bf407a6a3339 "xelatex"
+  "colin_zhang_resume.tex" 1728104368.25107 10553 2abf91e8fdf5f5a91cf8eee62d1c49a1 ""
   (generated)
-  "jia_zhang_chinese_resume.aux"
-  "jia_zhang_chinese_resume.log"
-  "jia_zhang_chinese_resume.out"
-  "jia_zhang_chinese_resume.xdv"
+  "colin_zhang_resume.aux"
+  "colin_zhang_resume.log"
+  "colin_zhang_resume.out"
+  "colin_zhang_resume.xdv"
   (rewritten before read)
