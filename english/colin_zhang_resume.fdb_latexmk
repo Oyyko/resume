@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1728104370.01112 "colin_zhang_resume.xdv" "colin_zhang_resume.pdf" "colin_zhang_resume" 1728104370.13506 0
-  "colin_zhang_resume.xdv" 1728104369.95736 47964 64cf2ad86d034e461530e1b91e00791a "xelatex"
+["xdvipdfmx"] 1728253327.89621 "colin_zhang_resume.xdv" "colin_zhang_resume.pdf" "colin_zhang_resume" 1728253327.96448 0
+  "colin_zhang_resume.xdv" 1728253327.85932 47964 c15b8db1a9800723be1869585fe0e75a "xelatex"
   (generated)
   "colin_zhang_resume.pdf"
   (rewritten before read)
-["xelatex"] 1728104368.71829 "/Users/jia/github/resume/english/colin_zhang_resume.tex" "colin_zhang_resume.xdv" "colin_zhang_resume" 1728104370.13404 0
-  "/Users/jia/github/resume/english/colin_zhang_resume.tex" 1728104368.25107 10553 2abf91e8fdf5f5a91cf8eee62d1c49a1 ""
+["xelatex"] 1728253327.31131 "/Users/jia/github/resume/english/colin_zhang_resume.tex" "colin_zhang_resume.xdv" "colin_zhang_resume" 1728253327.96341 0
+  "/Users/jia/github/resume/english/colin_zhang_resume.tex" 1728253326.55528 10553 2abf91e8fdf5f5a91cf8eee62d1c49a1 ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/fonts/tfm/public/cm/cmmi10.tfm" 1 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -95,9 +95,9 @@
   "/nix/store/a1xfphai5qn9vv4yvv2riknrzxfgxn7i-texlive-combined-2023-texmfdist/tex/latex/url/url.sty" 1 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/nix/store/x0klna6q9dsp0bqa86hhxn7dx93w3z1i-texlive-combined-2023/share/texmf-var/web2c/texmf.cnf" 1 42803 b13b377e1f351a49ac8343878b4a2476 ""
   "/nix/store/x0klna6q9dsp0bqa86hhxn7dx93w3z1i-texlive-combined-2023/share/texmf-var/web2c/xetex/xelatex.fmt" 1 10586589 7523e05ea5fc02449520dfac3ca70fab ""
-  "colin_zhang_resume.aux" 1728104369.95668 667 3887667cfc85b9f6a73a0d7818fa783c "xelatex"
-  "colin_zhang_resume.out" 1728104369.95715 539 2417b47431cee2283de9bf407a6a3339 "xelatex"
-  "colin_zhang_resume.tex" 1728104368.25107 10553 2abf91e8fdf5f5a91cf8eee62d1c49a1 ""
+  "colin_zhang_resume.aux" 1728253327.85851 667 3887667cfc85b9f6a73a0d7818fa783c "xelatex"
+  "colin_zhang_resume.out" 1728253327.859 539 2417b47431cee2283de9bf407a6a3339 "xelatex"
+  "colin_zhang_resume.tex" 1728253326.55528 10553 2abf91e8fdf5f5a91cf8eee62d1c49a1 ""
   (generated)
   "colin_zhang_resume.aux"
   "colin_zhang_resume.log"
